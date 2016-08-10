@@ -1,15 +1,14 @@
-var path = require('path')
 var webpack = require('webpack')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
-    './index',
+    './src/index',
   ],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: 'dist',
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   module: {
     loaders: [{
@@ -17,8 +16,8 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        'presets': ['es2015', 'stage-0'],
-        'plugins': ['transform-flow-strip-types']
+        'presets': ['es2015', 'stage-0',],
+        'plugins': ['transform-flow-strip-types',],
       },
     }, {
       test: /\.json$/,
