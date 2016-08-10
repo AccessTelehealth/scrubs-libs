@@ -2,7 +2,7 @@
   "name": "scrubs-libs",
   "version": "1.0.0",
   "description": "Utilities for Scrubs",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/dr-me/scrubs-libs/issues"
   },
-  "homepage": "https://github.com/dr-me/scrubs-libs"
+  "homepage": "https://github.com/dr-me/scrubs-libs",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-flow-strip-types": "^6.8.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "webpack": "^1.13.1"
+  }
 }
